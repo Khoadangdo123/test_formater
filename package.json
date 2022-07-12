@@ -7,10 +7,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^8.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,8 @@
   "description": "",
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "npm test",
+      "pre-add": "npm i express"
     }
   }
 }
